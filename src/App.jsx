@@ -7,18 +7,18 @@ import SingleMovies from "./Pages/single-Movies"
 
 
 function App() {
-  const Router=createBrowserRouter([
-    {path:"/Fimo/" , element:<Root/> , 
-      children:[
-        {path:"" ,
-          children:[
-            {index:true ,element:<Home/>},
-            // {path:"/:Single-Movies" , element:<SingleMovies/>}
-          ]
-        },
-      ]
-    }
-  ])
+  // const Router=createBrowserRouter([
+  //   {path:"/Fimo/" , element:<Root/> , 
+  //     children:[
+  //       {path:"" ,
+  //         children:[
+  //           {index:true ,element:<Home/>},
+  //           // {path:"/:Single-Movies" , element:<SingleMovies/>}
+  //         ]
+  //       },
+  //     ]
+  //   }
+  // ])
   return (
     <RouterProvider router={Router}></RouterProvider>
 

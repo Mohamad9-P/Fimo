@@ -8,7 +8,7 @@ import SingleMovies from "./Pages/single-Movies"
 
 function App() {
   const Router=createBrowserRouter([
-    {path:"Fimo" , element:<Root/> , 
+    {path:"" , element:<Root/> , 
       children:[
         {path:"/" ,
           children:[

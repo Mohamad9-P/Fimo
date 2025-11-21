@@ -13,7 +13,7 @@ function App() {
         {path:"" ,
           children:[
             {index:true ,element:<Home/>},
-            {path:"/:Single-Movies" , element:<SingleMovies/>}
+            // {path:"/:Single-Movies" , element:<SingleMovies/>}
           ]
         },
       ]

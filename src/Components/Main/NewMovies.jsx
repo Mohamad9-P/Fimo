@@ -6,7 +6,7 @@ export default function NewMovies(){
     const [data2 , setdata] =useState([])
     useEffect(()=>{
         async function fetchData(){
-        const res = await fetch(`/api/tmdb?path=movie/popular&query=language=en-US&page=1`)
+        const res = await fetch(`https://fimo-eta.vercel.app/api/tmdb?path=movie/popular&query=language=en-US&page=1`)
         const data = await res.json();
         console.log(data);
         setdata(data)

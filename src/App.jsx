@@ -10,7 +10,7 @@ function App() {
   const Router=createBrowserRouter([
     {path:"/Fimo" , element:<Root/> , 
       children:[
-        {path:"/" ,
+        {path:"" ,
           children:[
             {index:true ,element:<Home/>},
             {path:"/:Single-Movies" , element:<SingleMovies/>}

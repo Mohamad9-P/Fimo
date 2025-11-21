@@ -1,0 +1,299 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: IRANSans;
+}
+
+.navigation{
+  width: 90%;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-self: center;
+  justify-items: center;
+  position: absolute;
+  z-index: 1;
+}
+.navButton{
+  position: relative;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.navButton button{
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+
+}
+.navButton a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size:1.1rem;
+  font-family:"Poppins" , "Vazirmatn" , sans-serif ,IRANSans;
+}
+.navButton ul{
+  display: flex;
+}
+
+.navButton ul li{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  padding: 5px 20px 5px 0px;
+  cursor: pointer;
+}
+.searchBtn button{
+  padding: 0px 10px 0px 20px;
+  background-color: white;
+  display: flex;
+  color: #000000;
+  align-items: center;
+  cursor: pointer;
+  font-family: IRANSans;
+  font-size: 20px;
+  line-height: 2.5;
+  font-weight: 100;
+  border-radius: 13px;
+  border: none;
+}
+.ganre-box{
+  padding: 15px 12px 10px 15px ;
+  top: 43px;
+  width: 190px;
+  background-color: rgb(15, 15, 15);
+  border-radius: 7px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.ganre-box li{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  transition: 0.5s;
+}
+.ganre-box li:hover{
+  background-color: rgba(255, 255, 255, 0.212);
+  border-radius: 6px;
+}
+/* ***************BergerMune******************/
+.BtnBerger{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.bergerMenu{
+  margin-top: 25rem;
+  overflow: hidden;
+  background-color: rgba(48, 48, 48, 0.945);
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+  border-radius: 6px;
+}
+.bergerMenu button{
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.795);
+}
+.bergerMenu span{
+  padding-right: 15px;
+  text-align: end;
+  width: 100%;
+}
+.bergerMenu span:hover{
+  background-color: rgb(70, 57, 255);
+}
+/* ********************* HeaderSlider ************************ */
+.headerDiv{
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerDiv img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 80% 30%;
+  z-index: -1;
+  filter: brightness(70%);
+  
+}
+header{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.btnSlid{
+  width: 53%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding-bottom: 20px;
+}
+.btnSlid button{
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 5px 5px 5px 5px;
+}
+.Header-slider{
+  width: 47%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*      Slider Style       */
+.Slider{
+  /* height: 450px; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+  position: relative;
+}
+.box-Cards{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transition: transform 0.3s ease;
+  width: 80%;
+    scrollbar-width: none; /* فایرفاکس */
+  -ms-overflow-style: none;
+  /* overflow: hidden; */
+  
+  overflow: auto;
+}
+.Cards{
+  width: 12vw;
+  border-radius: 15px;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-bottom: 30px;
+}
+.Cards img{
+  width:12vw;
+  height: 16rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: conver;
+  object-fit:fill; 
+}
+.Cards img:hover{
+  filter: blur(1px);
+  filter: brightness(80%);
+}
+.Cards h3{
+  padding-bottom: 10px;
+  font-weight: 400;
+  color: #fff1f1;
+  
+}
+.Next-slider , .Previous-slider{
+  background-color: #ff272700;
+  border: none;
+}
+.rating-Cards{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+svg{
+  padding-right: 3px;
+  color: #f5c518;
+}
+.btn-Download{
+  display: flex;
+  align-items: center;
+  background-color: #2c2c2c;
+  border: none;
+  padding:8px 40px 8px 45px;
+  border-radius: 100px;
+}
+.btn-Download:hover{
+  background-color: #5e5e5e;
+}
+
+.genres-box {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: absolute;
+}
+.genres{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  font-size: 0.9rem;
+}
+.genres span{
+  background-color: rgba(0, 0, 0, 0.788);
+  opacity: 1;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+}
+
+/*************NewMovies*************/
+.NewMovies{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-top: 50px;
+  padding-right: 120px;
+  
+}
+.NewMovies div{
+  width: 5px;
+  height: 60px;
+  border-radius: 100px;
+  background-color: yellow;
+}
+
+.NewMovies h1{
+  font-family: IRANSans;
+  padding-right: 7px;
+  
+  font-size: 2.3rem;
+  padding-left: 100px;
+  font-weight: 400;
+}
+.NewMovies h1:hover{
+  color: rgb(255, 255, 173);
+}

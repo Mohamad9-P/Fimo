@@ -1,5 +1,6 @@
-const API_KEY = import.meta.env.VITE_TMDB_KEY;
 export default async function handler(req, res) {
+  const API_KEY = process.env.TMDB_API_KEY;
+
   const { path, query } = req.query;
 
   const url = `https://api.themoviedb.org/3/${path}?api_key=${API_KEY}&${query}`;
